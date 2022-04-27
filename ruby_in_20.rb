@@ -16,3 +16,19 @@ def hi(name = "World")
 end
 hi "kato"
 hi
+# Now working on creating classes
+class Greeter
+  def initialize(name = "World")
+    @name = name
+  end
+  def say_hi
+    puts "Hi #{@name}!"
+  end
+  def say_bye
+    puts "Bye #{@name}, come back soon."
+  end
+end
+
+greeter = Greeter.new("Kato")
+greeter.say_hi
+greeter.say_bye
